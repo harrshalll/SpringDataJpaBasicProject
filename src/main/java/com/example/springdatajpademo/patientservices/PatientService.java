@@ -19,6 +19,10 @@ public class PatientService {
 
         return p1;
     }
+    public Patient getPatientByName(String Name){
+        Patient patient = patientRepo.findByName(Name);
+        return patient;
+    }
 }
 
 /*

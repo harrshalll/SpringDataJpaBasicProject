@@ -14,13 +14,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(
-        //name = "patient_table",
+        name = "patient_table",
         uniqueConstraints = {
                 @UniqueConstraint(name = "unique_patient_email", columnNames = {"email"}),
                 @UniqueConstraint(name = "unique_patient_id",columnNames = {"id"})
         },
         indexes = {
-                @Index(name = "idx_patient_birth_date" ,columnList = "birthDate")
+                @Index(name = "idx_patient_birth_date" ,columnList = "birth_date")
         }
 )
 public class Patient {

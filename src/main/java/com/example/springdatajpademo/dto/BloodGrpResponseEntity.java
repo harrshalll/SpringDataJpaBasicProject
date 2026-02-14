@@ -1,0 +1,13 @@
+package com.example.springdatajpademo.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BloodGrpResponseEntity {
+    private String bloodGrp;
+    private Long count;
+}
